@@ -16,7 +16,7 @@ const Row = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 10px 0;
+    margin: 25px 0;
 `
 
 const Cell = styled.div`
@@ -32,29 +32,61 @@ function ButtonsPage() {
         <div>
             <h1>ButtonsPage</h1>
             <Table>
+                {/* 表頭 */}
                 <Row>
                     <Cell></Cell>
                     {Object.keys(colorList).length > 0 && Object.keys(colorList).map((key) => <Cell key={key}>{key}</Cell>)}
                 </Row>
+
                 <Row>
-                    <Cell>樣式：</Cell>
+                    <Cell>
+                        RWD <br />
+                        &lt; 576 <br />
+                        &gt;= 576 & 992 &lt; <br />
+                        &gt;= 992
+                    </Cell>
                     {Object.keys(colorList).length > 0 &&
                         Object.keys(colorList).map((key) => (
                             <Cell key={key}>
-                                <Button backgroundColor={colorList[key]} color={key === 'mainColor' ? colorList.contrastingColor : colorList.mainColor}>
+                                <Button
+                                    backgroundColor={colorList[key]}
+                                    color={key === 'mainColor' ? colorList.contrastingColor : colorList.mainColor}>
                                     Button
                                 </Button>
                             </Cell>
                         ))}
                 </Row>
-                <Row>
-                    <Cell>使用情境：</Cell>
-                    <Cell></Cell>
-                    <Cell></Cell>
-                    <Cell>取消/刪除</Cell>
-                    <Cell>確認</Cell>
-                    <Cell></Cell>
-                </Row>
+
+                {
+                    // 字型
+                    Object.keys(fontFamilyList).length > 0 && Object.keys(fontFamilyList).map((fontFamily) => {
+                        // 字體大小、粗度
+                        return Object.keys(fontSizeAndWeightList).length > 0 &&
+                            Object.keys(fontSizeAndWeightList).map((fontSizeAndWeight) =>
+                            (
+                                <Row key={fontFamily + fontSizeAndWeight}>
+                                    <Cell>字型: {fontFamilyList[fontFamily]} <br />
+                                        size: {fontSizeAndWeightList[fontSizeAndWeight].fontSize} <br />
+                                        weight: {fontSizeAndWeightList[fontSizeAndWeight].fontWeight}
+                                    </Cell>
+                                    {/* 顏色 */}
+                                    {Object.keys(colorList).length > 0 &&
+                                        Object.keys(colorList).map((key) => (
+                                            <Cell key={key}>
+                                                <Button backgroundColor={colorList[key]}
+                                                    color={key === 'mainColor' ? colorList.contrastingColor : colorList.mainColor}
+                                                    fontSize={fontSizeAndWeightList[fontSizeAndWeight].fontSize}
+                                                    fontWeight={fontSizeAndWeightList[fontSizeAndWeight].fontWeight}
+                                                    fontFamily={fontFamilyList[fontFamily]}>
+                                                    Button
+                                                </Button>
+                                            </Cell>
+                                        ))
+                                    }
+                                </Row>
+                            ))
+                    })
+                }
             </Table>
         </div>
     )

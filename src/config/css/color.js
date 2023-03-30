@@ -4,6 +4,7 @@ const colorList = {
     secondaryColorLighted: '#A5BECF', // 輔助色調
     secondaryColorDarked: '#335495', // 輔助色調
     contrastingColor: '#040A1B', // 強調色調
+    complementaryColor: '#c49f66', // 補充色調
 }
 
 export default colorList

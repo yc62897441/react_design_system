@@ -1,0 +1,32 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#382C0D",
+        "titleBar.activeBackground": "#4F3E12",
+        "titleBar.activeForeground": "#FCFAF3"
+    },
+    // "window.zoomLevel": 1,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "eslint.options": {},
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "prettier.tabWidth": 4,
+    "editor.tabSize": 4
+}
