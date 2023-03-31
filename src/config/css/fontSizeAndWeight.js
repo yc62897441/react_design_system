@@ -8,49 +8,30 @@ const fontSizeAndWeightList = {
         fontWeight: '400',
     },
     large: {
-        fontSize: '24px',
-        fontWeight: '700',
+        fontSize: '18px',
+        fontWeight: '400',
     },
     largest: {
-        fontSize: '32px',
-        fontWeight: '900',
+        fontSize: '20px',
+        fontWeight: '700',
     },
 }
 
-const titleH1FontSizeAndWeightList = {
+const titleH4FontSizeAndWeightList = {
     small: {
-        fontSize: '36px',
+        fontSize: '14px',
         fontWeight: '600',
     },
     medium: {
-        fontSize: '48px',
+        fontSize: '18px',
         fontWeight: '700',
     },
     large: {
-        fontSize: '60px',
-        fontWeight: '900',
-    },
-    largest: {
-        fontSize: '72px',
-        fontWeight: '900',
-    },
-}
-
-const titleH2FontSizeAndWeightList = {
-    small: {
         fontSize: '24px',
-        fontWeight: '600',
-    },
-    medium: {
-        fontSize: '36px',
-        fontWeight: '700',
-    },
-    large: {
-        fontSize: '48px',
         fontWeight: '900',
     },
     largest: {
-        fontSize: '60px',
+        fontSize: '30px',
         fontWeight: '900',
     },
 }
@@ -74,21 +55,40 @@ const titleH3FontSizeAndWeightList = {
     },
 }
 
-const titleH4FontSizeAndWeightList = {
+const titleH2FontSizeAndWeightList = {
     small: {
-        fontSize: '12px',
+        fontSize: '20px',
         fontWeight: '600',
     },
     medium: {
-        fontSize: '20px',
+        fontSize: '30px',
         fontWeight: '700',
     },
     large: {
-        fontSize: '30px',
+        fontSize: '48px',
         fontWeight: '900',
     },
     largest: {
+        fontSize: '60px',
+        fontWeight: '900',
+    },
+}
+
+const titleH1FontSizeAndWeightList = {
+    small: {
+        fontSize: '30px',
+        fontWeight: '600',
+    },
+    medium: {
         fontSize: '40px',
+        fontWeight: '700',
+    },
+    large: {
+        fontSize: '60px',
+        fontWeight: '900',
+    },
+    largest: {
+        fontSize: '72px',
         fontWeight: '900',
     },
 }

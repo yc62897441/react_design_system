@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { Title, TitleH1, TitleH2, TitleH3, TitleH4 } from '../components/miniComponents/Titles'
+import { TitleH1, TitleH2, TitleH3, TitleH4 } from '../components/miniComponents/Titles'
+import { P } from '../components/miniComponents/Text'
 import colorList from '../config/css/color'
 
 const Table = styled.div`
@@ -8,6 +9,7 @@ const Table = styled.div`
     width: 100%;
     padding: 20px;
     background-color: #eeeeee;
+    overflow: scroll;
 `
 
 const Row = styled.div`
@@ -38,7 +40,7 @@ function TitlesPage() {
 
                 <Row>
                     <Cell>
-                        RWD <br />
+                        一般文字 RWD <br />
                         &lt; 576 <br />
                         &gt;= 576 & 992 &lt; <br />
                         &gt;= 992
@@ -46,17 +48,17 @@ function TitlesPage() {
                     {Object.keys(colorList).length > 0 &&
                         Object.keys(colorList).map((key) => (
                             <Cell key={key}>
-                                <Title
+                                <P
                                     color={colorList[key]}>
-                                    Title 標題
-                                </Title>
+                                    Text 一般文字
+                                </P>
                             </Cell>
                         ))}
                 </Row>
 
                 <Row>
                     <Cell>
-                        TitleH1 RWD <br />
+                        TitleH4 RWD <br />
                         &lt; 576 <br />
                         &gt;= 576 & 992 &lt; <br />
                         &gt;= 992
@@ -64,28 +66,10 @@ function TitlesPage() {
                     {Object.keys(colorList).length > 0 &&
                         Object.keys(colorList).map((key) => (
                             <Cell key={key}>
-                                <TitleH1
+                                <TitleH4
                                     color={colorList[key]}>
-                                    TitleH1 標題
-                                </TitleH1>
-                            </Cell>
-                        ))}
-                </Row>
-
-                <Row>
-                    <Cell>
-                        TitleH2 RWD <br />
-                        &lt; 576 <br />
-                        &gt;= 576 & 992 &lt; <br />
-                        &gt;= 992
-                    </Cell>
-                    {Object.keys(colorList).length > 0 &&
-                        Object.keys(colorList).map((key) => (
-                            <Cell key={key}>
-                                <TitleH2
-                                    color={colorList[key]}>
-                                    TitleH2 標題
-                                </TitleH2>
+                                    TitleH4 標題
+                                </TitleH4>
                             </Cell>
                         ))}
                 </Row>
@@ -110,7 +94,7 @@ function TitlesPage() {
 
                 <Row>
                     <Cell>
-                        TitleH4 RWD <br />
+                        TitleH2 RWD <br />
                         &lt; 576 <br />
                         &gt;= 576 & 992 &lt; <br />
                         &gt;= 992
@@ -118,10 +102,28 @@ function TitlesPage() {
                     {Object.keys(colorList).length > 0 &&
                         Object.keys(colorList).map((key) => (
                             <Cell key={key}>
-                                <TitleH4
+                                <TitleH2
                                     color={colorList[key]}>
-                                    TitleH4 標題
-                                </TitleH4>
+                                    TitleH2 標題
+                                </TitleH2>
+                            </Cell>
+                        ))}
+                </Row>
+
+                <Row>
+                    <Cell>
+                        TitleH1 RWD <br />
+                        &lt; 576 <br />
+                        &gt;= 576 & 992 &lt; <br />
+                        &gt;= 992
+                    </Cell>
+                    {Object.keys(colorList).length > 0 &&
+                        Object.keys(colorList).map((key) => (
+                            <Cell key={key}>
+                                <TitleH1
+                                    color={colorList[key]}>
+                                    TitleH1 標題
+                                </TitleH1>
                             </Cell>
                         ))}
                 </Row>
