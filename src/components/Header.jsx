@@ -43,6 +43,10 @@ const linkList = [
         title: 'TextPage',
         url: '/TextPage',
     },
+    {
+        title: 'TablePage',
+        url: '/TablePage',
+    },
 ]
 
 function Header() {

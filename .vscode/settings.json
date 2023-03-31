@@ -5,11 +5,11 @@
         "titleBar.activeForeground": "#FCFAF3"
     },
     // "window.zoomLevel": 1,
-    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "prompt",
     "diffEditor.wordWrap": "on",
     "editor.wordWrap": "on",
     "[javascriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -19,8 +19,7 @@
     },
     "eslint.options": {},
     "eslint.alwaysShowStatus": true,
-    "eslint.validate": [
-    ],
+    "eslint.validate": [],
     "[json]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
