@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './containers/HomePage.jsx'
 import ButtonsPage from './containers/ButtonsPage.jsx'
+import TitlesPage from './containers/TitlesPage.jsx'
 import Header from './components/Header.jsx'
 
 import './index.css'
@@ -13,6 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/ButtonsPage" element={<ButtonsPage />} />
+                <Route path="/TitlesPage" element={<TitlesPage />} />
             </Routes>
         </BrowserRouter>
     )

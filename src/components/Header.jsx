@@ -35,6 +35,10 @@ const linkList = [
         title: 'ButtonsPage',
         url: '/ButtonsPage',
     },
+    {
+        title: 'TitlesPage',
+        url: '/TitlesPage',
+    },
 ]
 
 function Header() {

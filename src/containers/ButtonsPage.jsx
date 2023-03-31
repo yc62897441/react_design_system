@@ -51,7 +51,7 @@ function ButtonsPage() {
                                 <Button
                                     backgroundColor={colorList[key]}
                                     color={key === 'mainColor' ? colorList.contrastingColor : colorList.mainColor}>
-                                    Button
+                                    Button 按鈕
                                 </Button>
                             </Cell>
                         ))}
@@ -78,7 +78,7 @@ function ButtonsPage() {
                                                     fontSize={fontSizeAndWeightList[fontSizeAndWeight].fontSize}
                                                     fontWeight={fontSizeAndWeightList[fontSizeAndWeight].fontWeight}
                                                     fontFamily={fontFamilyList[fontFamily]}>
-                                                    Button
+                                                    Button 按鈕
                                                 </Button>
                                             </Cell>
                                         ))
