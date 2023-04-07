@@ -2,13 +2,12 @@ import styled from 'styled-components'
 import { P } from '../components/miniComponents/Text'
 import colorList from '../config/css/color'
 
-const Table = styled.div`
+const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 20px;
     background-color: #eeeeee;
-    overflow: scroll;
 `
 
 const Row = styled.div`
@@ -32,7 +31,7 @@ function TextPage() {
     return (
         <div>
             <h1>改變視窗大小，看 paragraph 的 RWD</h1>
-            <Table>
+            <Wrapper>
                 {/* 表頭 */}
                 {/* <Row>
                     <Cell></Cell>
@@ -59,7 +58,7 @@ function TextPage() {
                             </Cell>
                         </Row>
                     ))}
-            </Table>
+            </Wrapper>
         </div>
     )
 }

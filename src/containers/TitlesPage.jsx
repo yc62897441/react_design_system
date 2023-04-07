@@ -3,13 +3,12 @@ import { TitleH1, TitleH2, TitleH3, TitleH4 } from '../components/miniComponents
 import { P } from '../components/miniComponents/Text'
 import colorList from '../config/css/color'
 
-const Table = styled.div`
+const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 20px;
     background-color: #eeeeee;
-    overflow: scroll;
 `
 
 const Row = styled.div`
@@ -31,7 +30,7 @@ function TitlesPage() {
     return (
         <div>
             <h1>改變視窗大小，看 h1~h4 各元件的 RWD</h1>
-            <Table>
+            <Wrapper>
                 {/* 表頭 */}
                 <Row>
                     <Cell></Cell>
@@ -127,7 +126,7 @@ function TitlesPage() {
                             </Cell>
                         ))}
                 </Row>
-            </Table>
+            </Wrapper>
         </div>
     )
 }

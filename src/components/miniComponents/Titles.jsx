@@ -4,6 +4,8 @@ import fontFamilyList from '../../config/css/fontFamily'
 import fontSizeAndWeightList, { titleH1FontSizeAndWeightList, titleH2FontSizeAndWeightList, titleH3FontSizeAndWeightList, titleH4FontSizeAndWeightList } from '../../config/css/fontSizeAndWeight'
 
 const Title = styled.h1`
+    margin: 0;
+
     color: ${({ color }) => (color ? color : colorList.mainColor)};
     font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.small.fontSize)};
     font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.small.fontWeight)};
@@ -21,6 +23,8 @@ const Title = styled.h1`
 `
 
 const TitleH1 = styled.h1`
+    margin: 0;
+
     color: ${({ color }) => (color ? color : colorList.mainColor)};
     font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH1FontSizeAndWeightList.small.fontSize)};
     font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH1FontSizeAndWeightList.small.fontWeight)};
@@ -38,6 +42,8 @@ const TitleH1 = styled.h1`
 `
 
 const TitleH2 = styled.h2`
+    margin: 0;
+
     color: ${({ color }) => (color ? color : colorList.mainColor)};
     font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH2FontSizeAndWeightList.small.fontSize)};
     font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH2FontSizeAndWeightList.small.fontWeight)};
@@ -55,6 +61,8 @@ const TitleH2 = styled.h2`
 `
 
 const TitleH3 = styled.h3`
+    margin: 0;
+
     color: ${({ color }) => (color ? color : colorList.mainColor)};
     font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH3FontSizeAndWeightList.small.fontSize)};
     font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH3FontSizeAndWeightList.small.fontWeight)};
@@ -72,6 +80,8 @@ const TitleH3 = styled.h3`
 `
 
 const TitleH4 = styled.h4`
+    margin: 0;
+
     color: ${({ color }) => (color ? color : colorList.mainColor)};
     font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH4FontSizeAndWeightList.small.fontSize)};
     font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH4FontSizeAndWeightList.small.fontWeight)};

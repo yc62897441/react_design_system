@@ -17,6 +17,25 @@ const fontSizeAndWeightList = {
     },
 }
 
+const labelFontSizeAndWeightList = {
+    small: {
+        fontSize: '12px',
+        fontWeight: '400',
+    },
+    medium: {
+        fontSize: '16px',
+        fontWeight: '600',
+    },
+    large: {
+        fontSize: '20px',
+        fontWeight: '600',
+    },
+    largest: {
+        fontSize: '20px',
+        fontWeight: '700',
+    },
+}
+
 const titleH4FontSizeAndWeightList = {
     small: {
         fontSize: '14px',
@@ -94,4 +113,5 @@ const titleH1FontSizeAndWeightList = {
 }
 
 export default fontSizeAndWeightList
+export { labelFontSizeAndWeightList }
 export { titleH1FontSizeAndWeightList, titleH2FontSizeAndWeightList, titleH3FontSizeAndWeightList, titleH4FontSizeAndWeightList }

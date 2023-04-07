@@ -47,6 +47,10 @@ const linkList = [
         title: 'TablePage',
         url: '/TablePage',
     },
+    {
+        title: 'FormPage',
+        url: '/FormPage',
+    },
 ]
 
 function Header() {
