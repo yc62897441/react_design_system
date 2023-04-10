@@ -38,7 +38,7 @@ const Form = styled.form`
 
 const FormGroup = styled.form`
     display: flex;
-    flex-direction: column;
+    flex-direction: ${({ flexDirection }) => (flexDirection ? flexDirection : 'column')};
 `
 
 const Label = styled.label`

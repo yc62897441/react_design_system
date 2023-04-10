@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import colorList from '../../config/css/color'
 import fontFamilyList from '../../config/css/fontFamily'
 import fontSizeAndWeightList from '../../config/css/fontSizeAndWeight'
@@ -54,4 +54,46 @@ const TCell = styled.div`
     outline: none;
 `
 
-export { Table, THead, Tbody, THeadTr, Tr, TCell }
+const TableLabel = styled.label`
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    outline: none;
+`
+
+const TableSortLabel = styled(TableLabel)`
+    position: relative;
+    cursor: pointer;
+
+    :after {
+        position: relative;
+        top: -10%;
+        content: ' ↑ ';
+        color: ${colorList.mainColor};
+        font-weight: 900;
+
+        ${({ active, direction }) =>
+            active &&
+            direction == 'desc' &&
+            css`
+                content: ' ↓ ';
+            `}
+    }
+
+    :hover {
+        color: ${colorList.complementaryColor};
+        :after {
+            color: ${colorList.complementaryColor};
+        }
+    }
+
+    ${({ active }) =>
+        active &&
+        css`
+            color: ${colorList.complementaryColor};
+            :after {
+                color: ${colorList.complementaryColor};
+            }
+        `}
+`
+export { Table, THead, Tbody, THeadTr, Tr, TCell, TableLabel, TableSortLabel }

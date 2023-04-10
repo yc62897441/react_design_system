@@ -1,40 +1,39 @@
-import styled from 'styled-components'
-import { Table, THead, Tbody, THeadTr, Tr, TCell } from '../components/miniComponents/TableComponents'
+import UseTable from '../components/Table'
 
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 30px;
-    overflow-x: scroll;
-`
+// 建立測試用假資料
+const dummyDataHeader = Array.from({ length: 12 }, (v, i) => i).map((item, index) => {
+    return {
+        id: index,
+        label: `Column ${index + 1}`,
+        disableSorting: index !== 5 ? false : true,
+    }
+})
+const dummyData = Array.from({ length: 177 }, (v, i) => i).map((row, rowIndex) => {
+    const result = {}
+    dummyDataHeader.forEach((item) => {
+        result[item.label] = `Row ${numberToString(Number(rowIndex) + 1)} - ${item.id + 1}`
+    })
+    return result
+})
+function numberToString(number) {
+    let text = number.toString()
+    while (text.length < 3) {
+        text = '0' + text
+    }
+    return text
+}
 
 function TablePage() {
+    const { TblContainer, TblHead, TblBody, TblPagination } = UseTable(dummyData, dummyDataHeader)
+
     return (
         <div>
             <h1>Table</h1>
-            <Wrapper>
-                <Table>
-                    <THead>
-                        <THeadTr>
-                            {Array.from({ length: 12 }, (v, i) => i).map((item, index) => (
-                                <TCell key={index}>Column {index + 1}</TCell>
-                            ))}
-                        </THeadTr>
-                    </THead>
-                    <Tbody>
-                        {Array.from({ length: 20 }, (v, i) => i).map((row, rowIndex) => (
-                            <Tr key={rowIndex}>
-                                {Array.from({ length: 12 }, (v, i) => i).map((item, index) => (
-                                    <TCell key={index}>
-                                        Row {rowIndex + 1} - {index + 1}
-                                    </TCell>
-                                ))}
-                            </Tr>
-                        ))}
-                    </Tbody>
-                </Table>
-            </Wrapper>
+            <TblContainer>
+                <TblHead></TblHead>
+                <TblBody></TblBody>
+                <TblPagination></TblPagination>
+            </TblContainer>
         </div>
     )
 }

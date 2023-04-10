@@ -5,6 +5,7 @@ import ButtonsPage from './containers/ButtonsPage.jsx'
 import TitlesPage from './containers/TitlesPage.jsx'
 import TextPage from './containers/TextPage.jsx'
 import TablePage from './containers/TablePage.jsx'
+import TablePageNoPagination from './containers/TablePageNoPagination.jsx'
 import FormPage from './containers/FormPage.jsx'
 import Header from './components/Header.jsx'
 
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/TitlesPage" element={<TitlesPage />} />
                 <Route path="/TextPage" element={<TextPage />} />
                 <Route path="/TablePage" element={<TablePage />} />
+                <Route path="/TablePageNoPagination" element={<TablePageNoPagination />} />
                 <Route path="/FormPage" element={<FormPage />} />
             </Routes>
         </BrowserRouter>

@@ -5,6 +5,9 @@ import fontFamilyList from '../config/css/fontFamily'
 import fontSizeAndWeightList from '../config/css/fontSizeAndWeight'
 
 const HeaderWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     padding: 20px;
     background-color: ${colorList.secondaryColor};
@@ -46,6 +49,10 @@ const linkList = [
     {
         title: 'TablePage',
         url: '/TablePage',
+    },
+    {
+        title: 'TablePageNoPagination',
+        url: '/TablePageNoPagination',
     },
     {
         title: 'FormPage',
