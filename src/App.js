@@ -11,6 +11,7 @@ import TablePageNoPagination from './containers/TablePageNoPagination.jsx'
 import TextPage from './containers/TextPage.jsx'
 import TitlesPage from './containers/TitlesPage.jsx'
 
+import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 
 import './index.css'
@@ -18,9 +19,8 @@ import './index.css'
 function App() {
     return (
         <BrowserRouter>
-            <Header></Header>
+            <Header />
             <Routes>
-                <Route path="/" element={<HomePage />} />
                 <Route path="/ButtonsPage" element={<ButtonsPage />} />
                 <Route path="/FormPage" element={<FormPage />} />
                 <Route path="/ModalPage" element={<ModalPage />} />
@@ -28,12 +28,11 @@ function App() {
                 <Route path="/TablePageNoPagination" element={<TablePageNoPagination />} />
                 <Route path="/TextPage" element={<TextPage />} />
                 <Route path="/TitlesPage" element={<TitlesPage />} />
+                <Route path="/" element={<HomePage />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     )
 }
 
 export default App
-
-// TODO: 建立標題用的字體
-// TODO: button 建立不同的字型、字體大小的樣式、padding
