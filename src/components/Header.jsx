@@ -39,12 +39,12 @@ const linkList = [
         url: '/ButtonsPage',
     },
     {
-        title: 'TitlesPage',
-        url: '/TitlesPage',
+        title: 'FormPage',
+        url: '/FormPage',
     },
     {
-        title: 'TextPage',
-        url: '/TextPage',
+        title: 'ModalPage',
+        url: '/ModalPage',
     },
     {
         title: 'TablePage',
@@ -55,8 +55,12 @@ const linkList = [
         url: '/TablePageNoPagination',
     },
     {
-        title: 'FormPage',
-        url: '/FormPage',
+        title: 'TextPage',
+        url: '/TextPage',
+    },
+    {
+        title: 'TitlesPage',
+        url: '/TitlesPage',
     },
 ]
 
