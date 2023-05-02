@@ -7,8 +7,8 @@ const Title = styled.h1`
     margin: 0;
 
     color: ${({ color }) => (color ? color : colorList.mainColor)};
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.medium.fontWeight)};
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : fontFamilyList.NotoSans)};
 
     @media (min-width: 576px) {
@@ -26,8 +26,8 @@ const TitleH1 = styled.h1`
     margin: 0;
 
     color: ${({ color }) => (color ? color : colorList.mainColor)};
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH1FontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH1FontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH1FontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH1FontSizeAndWeightList.medium.fontWeight)};
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : fontFamilyList.NotoSans)};
 
     @media (min-width: 576px) {
@@ -45,8 +45,8 @@ const TitleH2 = styled.h2`
     margin: 0;
 
     color: ${({ color }) => (color ? color : colorList.mainColor)};
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH2FontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH2FontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH2FontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH2FontSizeAndWeightList.medium.fontWeight)};
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : fontFamilyList.NotoSans)};
 
     @media (min-width: 576px) {
@@ -64,8 +64,8 @@ const TitleH3 = styled.h3`
     margin: 0;
 
     color: ${({ color }) => (color ? color : colorList.mainColor)};
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH3FontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH3FontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH3FontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH3FontSizeAndWeightList.medium.fontWeight)};
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : fontFamilyList.NotoSans)};
 
     @media (min-width: 576px) {
@@ -83,8 +83,8 @@ const TitleH4 = styled.h4`
     margin: 0;
 
     color: ${({ color }) => (color ? color : colorList.mainColor)};
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH4FontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH4FontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : titleH4FontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : titleH4FontSizeAndWeightList.medium.fontWeight)};
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : fontFamilyList.NotoSans)};
 
     @media (min-width: 576px) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter,HashRouter, Routes, Route } from 'react-router-dom'
 
 // 頁面
 import ButtonsPage from './containers/ButtonsPage.jsx'
@@ -18,7 +18,7 @@ import './index.css'
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Header />
             <Routes>
                 <Route path="/ButtonsPage" element={<ButtonsPage />} />
@@ -31,7 +31,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

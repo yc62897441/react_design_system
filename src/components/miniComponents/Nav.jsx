@@ -21,8 +21,8 @@ const Nav = styled(Link)`
 
     color: ${colorList.mainColor};
     font-family: ${fontFamilyList.NotoSans};
-    font-size: ${fontSizeAndWeightList.small.fontSize};
-    font-weight: ${fontSizeAndWeightList.small.fontWeight};
+    font-size: ${fontSizeAndWeightList.medium.fontSize};
+    font-weight: ${fontSizeAndWeightList.medium.fontWeight};
 
     text-decoration: none;
     cursor: pointer;

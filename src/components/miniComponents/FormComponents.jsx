@@ -21,8 +21,8 @@ const Form = styled.form`
     background-color: ${({ backgroundColor }) => (backgroundColor ? backgroundColor : colorList.mainColor)};
     color: ${({ color }) => (color ? color : colorList.contrastingColor)};
 
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.medium.fontWeight)};
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : fontFamilyList.NotoSans)};
 
     @media (min-width: 576px) {
@@ -46,8 +46,8 @@ const Label = styled.label`
     padding: ${({ padding }) => (padding ? padding : '0')};
     color: ${({ color }) => (color ? color : colorList.secondaryColorDarked)};
 
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : labelFontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : labelFontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : labelFontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : labelFontSizeAndWeightList.medium.fontWeight)};
 
     @media (min-width: 576px) {
         font-size: ${({ fontSize }) => (fontSize ? fontSize : labelFontSizeAndWeightList.medium.fontSize)};
@@ -71,8 +71,8 @@ const Input = styled.input`
     background-color: #ffffff;
     color: ${({ color }) => (color ? color : colorList.secondaryColorDarked)};
 
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.medium.fontWeight)};
 
     :focus {
         outline: 1px solid black;
@@ -122,8 +122,8 @@ const Select = styled.select`
     background-color: #ffffff;
     color: ${({ color }) => (color ? color : colorList.secondaryColorDarked)};
 
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.medium.fontWeight)};
 
     :focus {
         outline: 1px solid black;
@@ -160,8 +160,8 @@ const Textarea = styled.textarea`
     background-color: #ffffff;
     color: ${({ color }) => (color ? color : colorList.secondaryColorDarked)};
 
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.small.fontSize)};
-    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.small.fontWeight)};
+    font-size: ${({ fontSize }) => (fontSize ? fontSize : fontSizeAndWeightList.medium.fontSize)};
+    font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : fontSizeAndWeightList.medium.fontWeight)};
 
     resize: none;
 
